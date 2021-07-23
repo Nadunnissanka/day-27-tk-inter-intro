@@ -10,7 +10,7 @@ window.config(padx=20, pady=30)
 def convert_miles_to_km():
     miles_need_to_convert = miles_input.get()
     one_mile_equal_to_km = 1.60934
-    total_km = one_mile_equal_to_km * float(miles_need_to_convert)
+    total_km = round(one_mile_equal_to_km * float(miles_need_to_convert))
     converted_label.config(text=f"{total_km}")
 
 
